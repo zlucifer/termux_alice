@@ -30,7 +30,7 @@ echo cara pakai termux insta
 read ASK # masukin pertanyaan
 FIX="$( echo "$ASK" | sed 's/[[:space:]]/_/g')"
 while true; do
-if [ $ASK = "x" ]; then
+if [ $FIX = "x" ]; then
 exit 1
 else
 alice=`curl -s http://zlucifer.hol.es/Project_Alice/index.php?input=$FIX`
